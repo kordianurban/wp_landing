@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+.DS_store
+.DS_Store
+/*/.idea
+/*/.phpintel
+/*/node_modules
+/*/package.json
+/*/package-lock.json
