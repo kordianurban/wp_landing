@@ -1,0 +1,111 @@
+body {
+  #main {
+    & > section {
+      padding: 90px 0;
+
+      &#intro {
+        position: relative;
+        padding-top: 45vh;
+        padding-bottom: 25vh;
+        background: $gray;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          border-left: 500px solid transparent;
+          border-bottom: 800px solid $orange;
+          position: absolute;
+          width: 75%;
+          top: 0;
+          right: 0;
+          z-index: 10;
+        }
+
+        .container {
+          min-height: 30vh;
+        }
+
+        h1 {
+          margin: 0;
+          color: $fontColor;
+
+          &:before {
+            @include line;
+          }
+        }
+
+        h2 {
+          font-size: 30px;
+          letter-spacing: 20px;
+          color: $fontColor;
+          opacity: .5;
+        }
+
+        figure {
+          position: absolute;
+          bottom: -35vh;
+          right: 15vw;
+
+          img {
+            position: relative;
+            z-index: 20;
+          }
+        }
+
+        & + section {
+          padding: 0;
+        }
+      }
+
+      &#downloads {
+        background: #f9f9f9;
+        text-align: center;
+
+        h2 {
+          color: $fontColor;
+
+          &:after {
+            @include line;
+            margin: 20px auto;
+            margin-bottom: 60px;
+            background: $fontColor;
+          }
+        }
+      }
+
+      &#contact {
+        background: $black;
+        color: rgba(255,255,255,.4);
+        font-size: 20px;
+
+        svg {
+          display: block;
+          margin-left: auto;
+          height: 90px;
+          width: auto;
+          opacity: .3;
+
+          path {
+            fill: #fff;
+          }
+        }
+
+        h3 {
+          color: #fff;
+
+          &:after {
+            @include line;
+            margin: 20px 0;
+            background: #fff;
+            opacity: .1;
+          }
+        }
+
+        a:hover {
+          text-decoration: none;
+          color: $orange;
+        }
+      }
+    }
+  }
+}

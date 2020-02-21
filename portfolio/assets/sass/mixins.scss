@@ -1,0 +1,63 @@
+@mixin coverBg {
+	background-size: cover;
+	background-position: center;
+}
+
+@mixin navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      transition: .2s all;
+    }
+  }
+}
+
+@mixin line {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background: $orange;
+  display: block;
+  margin-bottom: 30px;
+}
+
+@mixin button {
+  background-color: $orange;
+  border: none;
+  border-radius: 28px;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  border: 2px solid $orange;
+
+  &:hover {
+    text-decoration: none;
+    border-color: $orange;
+    color: $orange;
+    background: none;
+  }
+}

@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+$fontColor: #32373c;
+$orange: #672146;
+$orangeLight: #ccaed0;
+$yellow: #efdbb2;
+
+$gray: #eee;
+$black: #32373c;
+$orange: #ec7700;
+
+/* Reset & Defaults */
+@import 'vendor';
+@import 'mixins';
+
+/* Main layout */
+@import 'basic';
+@import 'header';
+@import 'footer';
+
+/* Specific */
+@import 'page';
+@import 'specific';
+

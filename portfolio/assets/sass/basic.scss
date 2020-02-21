@@ -1,0 +1,189 @@
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+body {
+	position: relative;
+	margin: 0;
+	font: 300 16px/1.4 'Roboto', sans-serif;
+	overflow: hidden;
+	color: $fontColor;
+	background: #fff;
+}
+
+*,
+*:after,
+*:before {
+	transition: .2s all;
+}
+
+p {
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+strong, b {
+	font-weight: 600;
+}
+
+img {
+	display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+	width: 100%;
+}
+
+article {
+	ul,
+	ol {
+		padding: 0 0 0 2rem;
+		margin: 0 0 2rem 0;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto Slab', serif !important;
+	color: $orange;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4, h5 {
+	font-size: 35px;
+}
+
+
+label {
+	padding: 0 8px;
+	margin-bottom: 15px;
+	color: $yellow;
+	display: block;
+}
+input,
+input:focus,
+textarea,
+textarea:focus {
+	display: block;
+	width: 100%;
+	box-shadow: none;
+	outline: 0;
+	padding: 5px 8px;
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 31px;
+	transition: .2s all;
+	background: none;
+	border: 0;
+	background: $orangeLight;
+
+	&:focus {
+		background: $yellow;
+		color: #fff;
+	}
+}
+
+button,
+input[type="submit"],
+button:focus,
+input[type="submit"]:focus {
+	&:not(.fancybox-button) {
+		@include button;
+	}
+}
+
+textarea {
+	height: 106px;
+	resize: none;
+}
+
+aside {
+	padding-top: 81px;
+	padding-left: 60px;
+
+	h5 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 81px;
+
+		li {
+			display: block;
+			list-style: none;
+			margin-bottom: 8px;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			a {
+				transition: .2s all;
+
+				&:hover {
+
+				}
+			}
+
+			&.active a {
+				font-weight: bold;
+			}
+		}
+	}
+
+	@media ( max-width: 992px ) {
+		padding-top: 60px;
+		padding-left: 30px;
+
+		h5 {
+			font-size: 26px;
+			margin-bottom: 20px;
+		}
+
+		ul {
+			margin-bottom: 60px;
+		}
+	}
+
+	@media ( max-width: 480px ) {
+		padding: 0;
+
+		h5 {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+
+		ul {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+.container {
+	max-width: 1360px;
+}
+
